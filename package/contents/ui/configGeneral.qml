@@ -1,12 +1,11 @@
-import QtQuick 2.2
-import QtQuick.Controls 1.0 as QQC1
-import QtQuick.Controls 2.5 as QQC2
-import QtQuick.Layouts 1.15
+import QtQuick
+import QtQuick.Controls as QQC
+import QtQuick.Layouts
 
-import org.kde.plasma.core 2.0 as PlasmaCore
-import org.kde.kirigami 2.9 as Kirigami
-import org.kde.plasma.components 3.0 as PlasmaComponents3
-import org.kde.kquickcontrolsaddons 2.1 as KQuickAddons
+import org.kde.plasma.core as PlasmaCore
+import org.kde.kirigami as Kirigami
+import org.kde.plasma.components as PlasmaComponents3
+import org.kde.kquickcontrolsaddons as KQuickAddons
 
 Kirigami.FormLayout {
   id: page
@@ -25,17 +24,17 @@ Kirigami.FormLayout {
 
   ColumnLayout {
     RowLayout {
-      QQC2.Label {
+      QQC.Label {
         text: i18n("Zoom Factor:")
       }
 
-      QQC1.SpinBox {
+      QQC.SpinBox {
         id: zoomFactor
         decimals: 2
         stepSize: 0.05
 
-        QQC2.ToolTip.visible: hovered
-        QQC2.ToolTip.text: i18n("Zoom factor uses to scale the plasmoid")
+        QQC.ToolTip.visible: hovered
+        QQC.ToolTip.text: i18n("Zoom factor uses to scale the plasmoid")
       }
     }
   }
@@ -61,15 +60,15 @@ Kirigami.FormLayout {
 
   ColumnLayout {
     RowLayout {
-      QQC2.Label {
+      QQC.Label {
         text: i18n("Plasmoid Icon:")
       }
 
-      QQC2.Button {
+      QQC.Button {
         id: plasmoidIcon
 
-        QQC2.ToolTip.visible: hovered
-        QQC2.ToolTip.text: i18n("Select icon for plasmoid")
+        QQC.ToolTip.visible: hovered
+        QQC.ToolTip.text: i18n("Select icon for plasmoid")
 
         icon.width: commonIconSize
         icon.height: commonIconSize
@@ -80,9 +79,9 @@ Kirigami.FormLayout {
         }
       }
 
-      QQC2.Button {
-        QQC2.ToolTip.visible: hovered
-        QQC2.ToolTip.text: i18n("Set default icon for plasmoid")
+      QQC.Button {
+        QQC.ToolTip.visible: hovered
+        QQC.ToolTip.text: i18n("Set default icon for plasmoid")
 
         icon.name: "edit-clear"
         icon.width: commonIconSize

@@ -4,6 +4,10 @@
       {
         "Email": "aliheym.dev@gmail.com",
         "Name": "aliheym"
+      },
+      {
+        "Email": "u.irigoyen@gmail.com",
+        "Name": "unai-i"
       }
     ],
     "Category": "Online Services",
@@ -11,7 +15,7 @@
     "Icon": "go-jump",
     "Id": "com.aliheym.chatgpt",
     "Name": "ChatGPT for KDE Plasma",
-    "Version": "0.1",
+    "Version": "0.2",
     "Website": "https://github.com/aliheym"
   },
   "X-Plasma-API": "declarativeappletscript",
